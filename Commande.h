@@ -19,7 +19,7 @@ class Commande {
         std::vector<Produit> _liste_produit;
         std::vector<Status> _status_produit;
         int _id;
-         std::string toString(Status status);
+        std::string toString(Status status); // transform enum to string (no ther way, we are not in python)
     public:
         Commande(int id, Client client);
         int getId() const;
