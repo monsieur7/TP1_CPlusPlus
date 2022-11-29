@@ -42,5 +42,6 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "xstring": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/."
 }
