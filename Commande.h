@@ -11,7 +11,7 @@ enum class Status {
     PAS_LIVREE
 
 }; 
-// for printing the status as a string
+
 class Commande {
     private:
         int commande;
@@ -49,7 +49,4 @@ class Commande {
             return os;
     }
         
-
-
-
 };
