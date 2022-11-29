@@ -22,13 +22,15 @@ class Commande {
         std::string toString(Status status); // transform enum to string (no ther way, we are not in python)
     public:
         Commande(int id, Client client);
+
         int getId() const;
-        void addProduit(Produit produit);
-        void changeStatus(Status status, int it);
         int getNombreDeProduit() const;
         const Client& getClient() const;
         const std::vector<Produit>& getListeProduit() const;
         const std::vector<Status>& getListeStatus() const;
+
+        void addProduit(Produit produit);
+        void changeStatus(Status status, int it);
 
         friend std::ostream& operator << (std::ostream& os, Commande commande){// can't put it in Commande.cpp otherwise linker complains :( 
             std::stringstream ss;
