@@ -1,4 +1,10 @@
 #include "Magasin.h"
+#include <cstdlib>
+#include <iterator>
+#include <algorithm>
+#include <array>
+#include <vector>
+
 
 Magasin::Magasin(){
     ;
@@ -48,6 +54,37 @@ void Magasin::updateQuantiteProduit(std::string nom, int quantite){
             i.setQuantite(quantite);
         }
     }
+}
+
+bool Magasin::validerCommande(int numeroCommande){
+    std::vector<Produit>::iterator it;
+    int compteurPresents = 0;
+    Commande commandeATraiter = _commandes[numeroCommande];
+    for(it = commandeATraiter.getListeProduit().begin(); it < commandeATraiter.getListeProduit().end();
+    it++){
+		if(std::count(_produits.begin(),_produits.end(),commandeATraiter.getListeProduit()[it - 
+        commandeATraiter.getListeProduit().begin()])){
+            compteurPresents++;
+        }
+    }
+    if(compteurPresents == commandeATraiter.getListeProduit().size()){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+        
+void Magasin::majStatusCommande(){
+
+}
+        
+void Magasin::affichageCommande(){
+
+}
+        
+void Magasin::affichageCommandeParClient(Client client){
+
 }
 
 
