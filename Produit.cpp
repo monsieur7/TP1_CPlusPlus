@@ -36,3 +36,8 @@ void Produit::setPrix(int prix){
 void Produit::setId(int id){
     _id = id;
 }
+
+std::ostream& operator<<(std::ostream& os, Produit& produit ){
+
+    return os << produit._titre << " " << produit._id << " " << produit._description << "prix " << produit._prix << "quantite " << produit._quantite;
+}
