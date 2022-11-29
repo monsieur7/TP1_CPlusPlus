@@ -28,15 +28,15 @@ void Client::ajouterProduit(Produit produit){
     _panier.push_back(produit);
 }
 
-void viderPanier(){
+void Client::viderPanier(){
     _panier.clear();
 }
 
-void modifierQuantite(int quantite, Produit produit){
+void Client::modifierQuantite(int quantite, Produit produit){
 
 }
         
-void supprimerProduit(Produit produit){
+void Client::supprimerProduit(Produit produit){
     auto it_end = std::remove(_panier.begin(),_panier.end(),produit);
     _panier.erase(it_end,_produit.end());
 }
