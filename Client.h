@@ -19,14 +19,14 @@ class Client{
         void viderPanier();
         void modifierQuantite(int quantite, Produit produit);
         void supprimerProduit(Produit produit);
-        ostream& operator << (ostream& os);
+        std::ostream& operator << (std::ostream& os);
 
 
 
 	private:
 		int _identifiant;
-        std::string prenom;
-        std::string nom;
+        std::string _prenom;
+        std::string _nom;
 		std::vector<Produit> _panier;
 
 };

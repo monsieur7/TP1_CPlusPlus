@@ -8,7 +8,7 @@
 Client::Client(int identifiant, std::string prenom, std::string nom, std::vector<Produit> panier) :
 _identifiant(identifiant), _prenom(prenom),_nom(nom),_panier(panier){}
 
-std::string Client::getIdentifiant(){
+int Client::getIdentifiant(){
     return _identifiant;
 }
 
@@ -28,15 +28,15 @@ void Client::ajouterProduit(Produit produit){
     _panier.push_back(produit);
 }
 
-void viderPanier(){
+void Client::viderPanier(){
     _panier.clear();
 }
 
-void modifierQuantite(int quantite, Produit produit){
+void Client::modifierQuantite(int quantite, Produit produit){
 
 }
         
-void supprimerProduit(Produit produit){
+void Client::supprimerProduit(Produit produit){
 
 }
         

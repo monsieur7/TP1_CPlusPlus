@@ -1,10 +1,7 @@
 #include <iostream>
-
+#include "Magasin.h"
 int main(void){
-    std::cout << "Hello, world" << std::endl;
-
-
-
-
+    Magasin dijon;
+    
     return 0;
 }
