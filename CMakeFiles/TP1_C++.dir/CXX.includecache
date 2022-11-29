@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mw/C++/TP3/TP1_CPlusPlus/Client.cpp
+Client.h
+/home/mw/C++/TP3/TP1_CPlusPlus/Client.h
+Produit.h
+/home/mw/C++/TP3/TP1_CPlusPlus/Produit.h
+vector
+-
+iostream
+-
+
+/home/mw/C++/TP3/TP1_CPlusPlus/Client.h
+iostream
+-
+vector
+-
+cstdlib
+-
+Produit.h
+/home/mw/C++/TP3/TP1_CPlusPlus/Produit.h
+
+/home/mw/C++/TP3/TP1_CPlusPlus/Produit.h
+string
+-
+
