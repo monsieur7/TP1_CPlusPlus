@@ -19,5 +19,9 @@ CMakeFiles/TP1_C++.dir/Magasin.cpp.o: Produit.h
 CMakeFiles/TP1_C++.dir/Produit.cpp.o: Produit.cpp
 CMakeFiles/TP1_C++.dir/Produit.cpp.o: Produit.h
 
+CMakeFiles/TP1_C++.dir/main.cpp.o: Client.h
+CMakeFiles/TP1_C++.dir/main.cpp.o: Commande.h
+CMakeFiles/TP1_C++.dir/main.cpp.o: Magasin.h
+CMakeFiles/TP1_C++.dir/main.cpp.o: Produit.h
 CMakeFiles/TP1_C++.dir/main.cpp.o: main.cpp
 

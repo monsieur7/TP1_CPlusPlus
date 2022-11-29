@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include "Produit.h"
 
+#include <sstream>
 
 #ifndef CLIENT_H
 #define CLIENT_H
@@ -19,8 +20,16 @@ class Client{
         void viderPanier();
         void modifierQuantite(int quantite, Produit produit);
         void supprimerProduit(Produit produit);
-        std::ostream& operator << (std::ostream& os);
-
+    friend std::ostream& operator << (std::ostream& os, Client client){
+        std::stringstream ss;
+        auto panier = client.getPanier();
+        for (auto it = panier.begin(); it != panier.end(); it++){
+            ss << " "  << *it;
+        }
+        os << "Id: " << client.getIdentifiant() << " prenom: " << client.getPrenom() << " nom: " <<
+        client.getNom() << " Contenu du panier: " << ss.str();
+        return os;
+    }
 
 
 	private:

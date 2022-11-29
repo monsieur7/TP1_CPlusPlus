@@ -16,7 +16,7 @@ int Produit::getQuantite(){
 float Produit::getPrix(){
     return _prix;
 }
-int Produit::getId(){
+int Produit::getId() const{
     return _id;
 }
 void Produit::setTitre(std::string titre){

@@ -14,7 +14,7 @@ class Produit {
         std::string getDescription();
         int getQuantite();
         float getPrix();
-        int getId();
+        int getId() const;
         void setTitre(std::string titre);
         void setDescription(std::string description);
         void setQuantite(int quantite);
