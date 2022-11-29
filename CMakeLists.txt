@@ -3,7 +3,7 @@ project(TP1_C++ VERSION 0.1.0)
 
 include(CTest)
 enable_testing()
-SET(sources main.cpp Magasin.cpp Client.cpp Produit.cpp)
+SET(sources main.cpp Magasin.cpp Client.cpp Produit.cpp Commande.cpp)
 add_executable(TP1_C++ ${sources})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

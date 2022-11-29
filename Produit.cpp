@@ -1,7 +1,7 @@
 #include "Produit.h"
-
-Produit::Produit(std::string titre, std::string description, int quantitie, float prix)
-:_titre(titre), _description(description), _quantite(quantitie), _prix(prix)
+#include <stdexcept>
+Produit::Produit(std::string titre, std::string description, int quantitie, float prix, int id)
+:_titre(titre), _description(description), _quantite(quantitie), _prix(prix), _id(id)
 {
 }
 std::string Produit::getTitre(){
@@ -16,6 +16,9 @@ int Produit::getQuantite(){
 float Produit::getPrix(){
     return _prix;
 }
+int Produit::getId(){
+    return _id;
+}
 void Produit::setTitre(std::string titre){
     _titre = titre;
 }
@@ -26,6 +29,10 @@ void Produit::setQuantite(int quantite){
     _quantite = quantite;
 }
 void Produit::setPrix(int prix){
-    if(prix < 0) throw std::exception("Le prix doit être supérieur à 0")
+    if(prix < 0) throw std::runtime_error("Le prix doit être supérieur à 0");
     else _prix = prix;
+}
+
+void Produit::setId(int id){
+    _id = id;
 }
