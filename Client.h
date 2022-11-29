@@ -9,7 +9,7 @@
 #define CLIENT_H
 
 class Client{
-	public:
+	    public:
 		Client(int identifiant, std::string prenom, std::string nom);
 		int getIdentifiant() const;
         std::string getPrenom() const;
