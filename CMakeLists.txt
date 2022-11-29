@@ -3,8 +3,8 @@ project(TP1_C++ VERSION 0.1.0)
 
 include(CTest)
 enable_testing()
-
-add_executable(TP1_C++ main.cpp)
+SET(sources main.cpp Magasin.cpp Client.cpp Produit.cpp)
+add_executable(TP1_C++ ${sources})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
