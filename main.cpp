@@ -8,7 +8,7 @@ int main(void){
     dijon.updateQuantiteProduit("lait", 12);
     dijon.afficherProduit();
 
-    Client client(1, "Nolane", "DELILLE", 
+    Client client(1, (std::string)"Nolane", (std::string)"DELILLE");
 
     return 0;
 }

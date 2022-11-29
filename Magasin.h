@@ -17,10 +17,11 @@ class Magasin {
         void addCommande(Commande commande);
         void afficherProduit();
         void afficherProduit(std::string nom);
+        Produit& getProduitById(int id); // TODO
         void updateQuantiteProduit(std::string nom, int quantite);
         bool validerCommande(int numeroCommande);
         void majStatusCommande();
-        void affichageCommande();
+        void affichageCommande();   
         void affichageCommandeParClient(Client client);
         void afficherClient();
         void afficherClientId(int id);

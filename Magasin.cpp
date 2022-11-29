@@ -79,6 +79,7 @@ void Magasin::afficherClientPrenom(std::string prenom){
             std::cout << i << std::endl;
     }
 }
+//Problem with this ? need to fix it 
 
 bool Magasin::validerCommande(int numeroCommande){
     std::vector<Produit>::iterator it;
@@ -86,19 +87,14 @@ bool Magasin::validerCommande(int numeroCommande){
     Commande commandeATraiter = _commandes[numeroCommande];
     for(it = commandeATraiter.getListeProduit().begin(); it < commandeATraiter.getListeProduit().end();
     it++){
-		if(std::count(_produits.begin(),_produits.end(),commandeATraiter.getListeProduit()[it - 
-        commandeATraiter.getListeProduit().begin()])){
-            compteurPresents++;
+        if(getProduitById(it->getId()).getQuantite() <= it->getQuantite()){
+            return false;
         }
     }
-    if(compteurPresents == commandeATraiter.getListeProduit().size()){
-        return true;
-    }
-    else{
-        return false;
-    }
+    return true;
+		
 }
-        
+  
 void Magasin::majStatusCommande(){
 
 }
@@ -134,3 +130,11 @@ for(auto& i : _clients){
     }
 }
 
+Produit& Magasin::getProduitById(int id){
+    for(auto &i : _produits){
+        if(i.getId() == id){
+            return i;
+        }
+    }
+    throw std::runtime_error("pas de produits trouvés avec cette id !");
+}
