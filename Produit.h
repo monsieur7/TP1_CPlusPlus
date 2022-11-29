@@ -20,6 +20,6 @@ class Produit {
         void setQuantite(int quantite);
         void setPrix(int prix);
         void setId(int id);
-        friend std::ostream operator<<(std::ostream &os, Produit produit );
+        friend std::ostream& operator<<(std::ostream& os, Produit& produit );
 
 };
