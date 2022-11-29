@@ -8,13 +8,19 @@ enum class Status {
 };
 class Commande {
     private:
-        int commande
+        int commande;
         Client _client;
         std::vector<Produit> _liste_produit;
         std::vector<Status> _status_produit;
-        int id;
+        int _id;
     public:
-
+        Commande(int id, Client client);
+        int getId();
+        const Client& getClient();
+        void addProduit(Produit produit);
+        void changeStatus(Status status, int it);
+        int getNombreDeProduit();
+        
 
 
 
