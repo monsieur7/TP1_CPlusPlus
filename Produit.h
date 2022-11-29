@@ -14,7 +14,7 @@ class Produit {
     float getPrix();
     void setTitre(std::string titre);
     void setDescription(std::string description);
-    void setQuantité(int quantite);
+    void setQuantite(int quantite);
     void setPrix(int prix);
 
 
