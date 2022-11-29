@@ -7,5 +7,8 @@ int main(void){
     dijon.afficherProduit("lait");
     dijon.updateQuantiteProduit("lait", 12);
     dijon.afficherProduit();
+
+    Client client(1, "Nolane", "DELILLE", 
+
     return 0;
 }
