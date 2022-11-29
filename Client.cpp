@@ -37,12 +37,8 @@ void Client::modifierQuantite(int quantite, Produit produit){
 }
         
 void Client::supprimerProduit(Produit produit){
-<<<<<<< HEAD
-
-=======
     auto it_end = std::remove(_panier.begin(),_panier.end(),produit);
     _panier.erase(it_end,_produit.end());
->>>>>>> a97a3ab6a8fd9f10a1b249b59b63cafe17a74db4
 }
         
 std::ostream& operator << (std::ostream& os){
