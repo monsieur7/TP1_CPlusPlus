@@ -19,13 +19,18 @@ class Commande {
         int _id;
     public:
         Commande(int id, Client client);
-        int getId();
-        const Client& getClient();
-        std::vector<Produit> getListeProduit();
-        std::vector<Status> getListeStatus();
+        int getId() const;
+        const Client& getClient()  const;
         void addProduit(Produit produit);
         void changeStatus(Status status, int it);
-        int getNombreDeProduit();
+        int getNombreDeProduit()  const;
+        int getId() const;
+        const Client& getClient() const;
+        std::vector<Produit> getListeProduit() const;
+        std::vector<Status> getListeStatus() const;
+        void addProduit(Produit produit);
+        void changeStatus(Status status, int it);
+        int getNombreDeProduit() const;
 
         friend std::ostream& operator << (std::ostream& os, Commande commande){
         std::stringstream ss;

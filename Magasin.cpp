@@ -55,6 +55,30 @@ void Magasin::updateQuantiteProduit(std::string nom, int quantite){
         }
     }
 }
+void Magasin::afficherClient(){
+    std::cout << "clients " << _clients.size() << std::endl;
+    for(auto& i : _clients){
+        std::cout << i << std::endl;
+    }
+}
+void Magasin::afficherClientId(int id){
+    for(auto& i : _clients){
+        if(i.getIdentifiant() == id)
+            std::cout << i << std::endl;
+    }
+}
+void Magasin::afficherClientNom(std::string nom){
+    for(auto& i : _clients){
+        if(i.getNom() == nom)
+            std::cout << i << std::endl;
+    }
+}
+void Magasin::afficherClientPrenom(std::string prenom){
+    for(auto& i : _clients){
+        if(i.getPrenom() == prenom)
+            std::cout << i << std::endl;
+    }
+}
 
 bool Magasin::validerCommande(int numeroCommande){
     std::vector<Produit>::iterator it;
@@ -88,4 +112,25 @@ void Magasin::affichageCommandeParClient(Client client){
 }
 
 
+void Magasin::addProduitPanier(Client client, Produit produit){
+    for(auto& i : _clients){
+        if(client.getIdentifiant() == i.getIdentifiant()){
+            i.ajouterProduit(produit);
+        }
+    }
+}
+void Magasin::deleteProduitPanier(Client client, Produit produit){
+for(auto& i : _clients){
+        if(client.getIdentifiant() == i.getIdentifiant()){
+            i.supprimerProduit(produit);
+        }
+    }
+}
+void Magasin::updateQuantitePanier(Client client, Produit produit, int quantite){
+for(auto& i : _clients){
+        if(client.getIdentifiant() == i.getIdentifiant()){
+            i.modifierQuantite(quantite, produit);
+        }
+    }
+}
 

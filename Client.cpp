@@ -8,19 +8,19 @@
 Client::Client(int identifiant, std::string prenom, std::string nom, std::vector<Produit> panier) :
 _identifiant(identifiant), _prenom(prenom),_nom(nom),_panier(panier){}
 
-int Client::getIdentifiant(){
+int Client::getIdentifiant() const{
     return _identifiant;
 }
 
-std::string Client::getPrenom(){
+std::string Client::getPrenom() const{
     return _prenom;
 }
         
-std::string Client::getNom(){
+std::string Client::getNom() const{
     return _nom; 
 }
 
-std::vector<Produit> Client::getPanier(){
+std::vector<Produit> Client::getPanier() const{
     return _panier;
 }
 

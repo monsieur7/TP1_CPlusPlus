@@ -12,23 +12,23 @@ class Client{
 
 	public:
 		Client(int identifiant, std::string prenom, std::string nom, std::vector<Produit> panier);
-		int getIdentifiant();
-        std::string getPrenom();
-        std::string getNom();
-        std::vector<Produit> getPanier();
+		int getIdentifiant() const;
+        std::string getPrenom() const;
+        std::string getNom() const;
+        std::vector<Produit> getPanier() const;
         void ajouterProduit(Produit produit);
         void viderPanier();
         void modifierQuantite(int quantite, Produit produit);
         void supprimerProduit(Produit produit);
-    friend std::ostream& operator << (std::ostream& os, Client client){
-        std::stringstream ss;
-        auto panier = client.getPanier();
-        for (auto it = panier.begin(); it != panier.end(); it++){
-            ss << " "  << *it;
-        }
-        os << "Id: " << client.getIdentifiant() << " prenom: " << client.getPrenom() << " nom: " <<
-        client.getNom() << " Contenu du panier: " << ss.str();
-        return os;
+        friend std::ostream& operator << (std::ostream& os, Client client){ // cette fonction est dans le .h car sinon le linker n'y comprends rien avec l'autre opérateur de produit
+            std::stringstream ss;
+            auto panier = client.getPanier();
+            for (auto it = panier.begin(); it != panier.end(); it++){
+                ss << " "  << *it;
+            }
+            os << "Id: " << client.getIdentifiant() << " prenom: " << client.getPrenom() << " nom: " <<
+            client.getNom() << " Contenu du panier: " << ss.str();
+            return os;
     }
 
 
@@ -39,6 +39,4 @@ class Client{
 		std::vector<Produit> _panier;
 
 };
-
-
 #endif

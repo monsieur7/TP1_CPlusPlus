@@ -22,6 +22,14 @@ class Magasin {
         void majStatusCommande();
         void affichageCommande();
         void affichageCommandeParClient(Client client);
+        void afficherClient();
+        void afficherClientId(int id);
+        void afficherClientNom(std::string nom);
+        void afficherClientPrenom(std::string prenom);
+        void addProduitPanier(Client client, Produit produit);
+        void deleteProduitPanier(Client client, Produit produit);
+        void updateQuantitePanier(Client client, Produit produit, int quantite);
+    
 
 
 
