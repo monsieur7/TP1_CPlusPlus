@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <cstdlib>
+#include "Produit.h"
+
 
 #ifndef CLIENT_H
 #define CLIENT_H
@@ -20,9 +22,6 @@ class Client{
         ostream& operator << (ostream& os);
 
 
-
-		
-		
 
 	private:
 		int _identifiant;

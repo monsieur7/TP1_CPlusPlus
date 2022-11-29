@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TP1_C++.dir/Client.cpp.o"
+  "CMakeFiles/TP1_C++.dir/Commande.cpp.o"
   "CMakeFiles/TP1_C++.dir/Magasin.cpp.o"
   "CMakeFiles/TP1_C++.dir/Produit.cpp.o"
   "CMakeFiles/TP1_C++.dir/main.cpp.o"

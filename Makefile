@@ -547,6 +547,33 @@ Client.cpp.s:
 	$(MAKE) -f CMakeFiles/TP1_C++.dir/build.make CMakeFiles/TP1_C++.dir/Client.cpp.s
 .PHONY : Client.cpp.s
 
+Commande.o: Commande.cpp.o
+
+.PHONY : Commande.o
+
+# target to build an object file
+Commande.cpp.o:
+	$(MAKE) -f CMakeFiles/TP1_C++.dir/build.make CMakeFiles/TP1_C++.dir/Commande.cpp.o
+.PHONY : Commande.cpp.o
+
+Commande.i: Commande.cpp.i
+
+.PHONY : Commande.i
+
+# target to preprocess a source file
+Commande.cpp.i:
+	$(MAKE) -f CMakeFiles/TP1_C++.dir/build.make CMakeFiles/TP1_C++.dir/Commande.cpp.i
+.PHONY : Commande.cpp.i
+
+Commande.s: Commande.cpp.s
+
+.PHONY : Commande.s
+
+# target to generate assembly for a file
+Commande.cpp.s:
+	$(MAKE) -f CMakeFiles/TP1_C++.dir/build.make CMakeFiles/TP1_C++.dir/Commande.cpp.s
+.PHONY : Commande.cpp.s
+
 Magasin.o: Magasin.cpp.o
 
 .PHONY : Magasin.o
@@ -671,6 +698,9 @@ help:
 	@echo "... Client.o"
 	@echo "... Client.i"
 	@echo "... Client.s"
+	@echo "... Commande.o"
+	@echo "... Commande.i"
+	@echo "... Commande.s"
 	@echo "... Magasin.o"
 	@echo "... Magasin.i"
 	@echo "... Magasin.s"
