@@ -1,4 +1,5 @@
 #include <string>
+#include <iostream>
 #pragma once
 class Produit {
     private:
@@ -19,5 +20,6 @@ class Produit {
         void setQuantite(int quantite);
         void setPrix(int prix);
         void setId(int id);
+        friend std::ostream operator<<(std::ostream &os, Produit produit )
 
 };
