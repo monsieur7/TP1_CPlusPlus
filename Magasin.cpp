@@ -29,3 +29,26 @@ void Magasin::addCommande(Commande commande){
     _commandes.push_back(commande);
 }
 
+void Magasin::afficherProduit(){
+    std::cout << "produits " << _produits.size() << std::endl;
+    for(auto& i : _produits){
+        std::cout << i << std::endl;
+    }
+}
+void Magasin::afficherProduit(std::string nom){
+    for(auto& i : _produits){
+        if(i.getTitre() == nom){
+            std::cout << i << std::endl;
+        }
+    }
+}
+void Magasin::updateQuantiteProduit(std::string nom, int quantite){
+    for(auto& i : _produits){
+        if(i.getTitre() == nom){
+            i.setQuantite(quantite);
+        }
+    }
+}
+
+
+
