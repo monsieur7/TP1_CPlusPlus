@@ -15,11 +15,11 @@ class Commande {
         int _id;
     public:
         Commande(int id, Client client);
-        int getId();
-        const Client& getClient();
+        int getId()  const;
+        const Client& getClient()  const;
         void addProduit(Produit produit);
         void changeStatus(Status status, int it);
-        int getNombreDeProduit();
+        int getNombreDeProduit()  const;
         
 
 

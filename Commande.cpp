@@ -5,10 +5,10 @@ Commande::Commande(int id, Client client)
     :_id(id), _client(client)
 {
 }
-int Commande::getId(){
+int Commande::getId() const{
     return _id;
 }
-const Client& Commande::getClient(){
+const Client& Commande::getClient() const{
     return _client;
 }
 void Commande::addProduit(Produit produit){
@@ -17,6 +17,6 @@ void Commande::addProduit(Produit produit){
 void Commande::changeStatus(Status status, int it){
     _status_produit.at(it) = status;
 }
-int Commande::getNombreDeProduit(){
+int Commande::getNombreDeProduit()  const{
     return _liste_produit.size();
 }

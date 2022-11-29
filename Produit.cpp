@@ -12,16 +12,16 @@ Produit::Produit(std::string titre, std::string description, int quantitie, floa
         std::runtime_error("le prix doit être supérieur ou égal à 0");
     }
 }
-std::string Produit::getTitre(){
+std::string Produit::getTitre() const{
     return _titre;
 }
-std::string Produit::getDescription(){
+std::string Produit::getDescription() const{
     return _description;
 }
-int Produit::getQuantite(){
+int Produit::getQuantite() const{
     return _quantite;
 }
-float Produit::getPrix(){
+float Produit::getPrix() const{
     return _prix;
 }
 int Produit::getId() const{

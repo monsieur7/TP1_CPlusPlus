@@ -11,10 +11,10 @@ class Produit {
         int _id;
     public:
         Produit(std::string titre, std::string description, int quantitie, float prix, int id);
-        std::string getTitre();
-        std::string getDescription();
-        int getQuantite();
-        float getPrix();
+        std::string getTitre() const;
+        std::string getDescription() const;
+        int getQuantite() const;
+        float getPrix() const;
         int getId() const;
         void setTitre(std::string titre);
         void setDescription(std::string description);
