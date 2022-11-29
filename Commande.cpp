@@ -20,3 +20,21 @@ void Commande::changeStatus(Status status, int it){
 int Commande::getNombreDeProduit()  const{
     return _liste_produit.size();
 }
+
+std::string Commande::toString(Status status){
+    std::string ret = "";
+    switch (status)
+    {
+    case Status::LIVREE : {
+        ret = "LIVREE";
+        break;
+    }
+    case Status::PAS_LIVREE : {
+        ret = "PAS_LIVREE";
+        break;
+    }
+    default:
+        break;
+    }
+    return ret;
+}
