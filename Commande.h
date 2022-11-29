@@ -30,7 +30,7 @@ class Commande {
         const std::vector<Produit>& getListeProduit() const;
         const std::vector<Status>& getListeStatus() const;
 
-        friend std::ostream& operator << (std::ostream& os, Commande commande){
+        friend std::ostream& operator << (std::ostream& os, Commande commande){// can't put it in Commande.cpp otherwise linker complains :( 
             std::stringstream ss;
             std::stringstream ss2;
             auto liste_produit = commande.getListeProduit();
