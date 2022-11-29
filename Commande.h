@@ -27,8 +27,8 @@ class Commande {
         void changeStatus(Status status, int it);
         int getNombreDeProduit() const;
         const Client& getClient() const;
-        std::vector<Produit> getListeProduit() const;
-        std::vector<Status> getListeStatus() const;
+        const std::vector<Produit>& getListeProduit() const;
+        const std::vector<Status>& getListeStatus() const;
 
         friend std::ostream& operator << (std::ostream& os, Commande commande){
             std::stringstream ss;

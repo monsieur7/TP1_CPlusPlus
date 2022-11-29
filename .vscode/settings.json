@@ -43,5 +43,6 @@
         "typeinfo": "cpp",
         "xstring": "cpp"
     },
-    "cmake.sourceDirectory": "${workspaceFolder}/."
+    "cmake.sourceDirectory": "${workspaceFolder}/.",
+    "C_Cpp.errorSquiggles": "Disabled"
 }

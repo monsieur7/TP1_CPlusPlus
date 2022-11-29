@@ -38,3 +38,10 @@ std::string Commande::toString(Status status){
     }
     return ret;
 }
+
+const std::vector<Produit>& Commande::getListeProduit() const {
+    return _liste_produit;
+}
+const std::vector<Status>& Commande::getListeStatus() const {
+    return _status_produit;
+}

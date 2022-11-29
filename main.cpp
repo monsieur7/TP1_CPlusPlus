@@ -9,6 +9,14 @@ int main(void){
     dijon.afficherProduit();
 
     Client client(1, (std::string)"Nolane", (std::string)"DELILLE");
+    dijon.addClient(client);
+
+    dijon.afficherClient();
+    dijon.afficherClientId(1);
+    dijon.afficherClientNom("DELILLE");
+    dijon.afficherClientPrenom("Nolane");
+
+    dijon.addProduitPanier(client, lait);
 
     return 0;
 }

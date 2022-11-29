@@ -82,11 +82,9 @@ void Magasin::afficherClientPrenom(std::string prenom){
 //Problem with this ? need to fix it 
 
 bool Magasin::validerCommande(int numeroCommande){
-    std::vector<Produit>::iterator it;
     int compteurPresents = 0;
     Commande commandeATraiter = _commandes[numeroCommande];
-    for(it = commandeATraiter.getListeProduit().begin(); it < commandeATraiter.getListeProduit().end();
-    it++){
+    for(auto it = commandeATraiter.getListeProduit().begin(); it != commandeATraiter.getListeProduit().end(); it++){
         if(getProduitById(it->getId()).getQuantite() <= it->getQuantite()){
             return false;
         }
@@ -96,15 +94,15 @@ bool Magasin::validerCommande(int numeroCommande){
 }
   
 void Magasin::majStatusCommande(){
-
+//TODO
 }
         
 void Magasin::affichageCommande(){
-
+//TODO
 }
         
 void Magasin::affichageCommandeParClient(Client client){
-
+//TODO 
 }
 
 
