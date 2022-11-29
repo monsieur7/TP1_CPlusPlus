@@ -19,7 +19,7 @@ class Client{
         void viderPanier();
         void modifierQuantite(int quantite, Produit produit);
         void supprimerProduit(Produit produit);
-        ostream& operator << (ostream& os);
+        std::ostream& operator << (std::ostream& os);
 
 
 

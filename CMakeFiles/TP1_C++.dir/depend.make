@@ -5,9 +5,16 @@ CMakeFiles/TP1_C++.dir/Client.cpp.o: Client.cpp
 CMakeFiles/TP1_C++.dir/Client.cpp.o: Client.h
 CMakeFiles/TP1_C++.dir/Client.cpp.o: Produit.h
 
+CMakeFiles/TP1_C++.dir/Commande.cpp.o: Client.h
 CMakeFiles/TP1_C++.dir/Commande.cpp.o: Commande.cpp
+CMakeFiles/TP1_C++.dir/Commande.cpp.o: Commande.h
+CMakeFiles/TP1_C++.dir/Commande.cpp.o: Produit.h
 
+CMakeFiles/TP1_C++.dir/Magasin.cpp.o: Client.h
+CMakeFiles/TP1_C++.dir/Magasin.cpp.o: Commande.h
 CMakeFiles/TP1_C++.dir/Magasin.cpp.o: Magasin.cpp
+CMakeFiles/TP1_C++.dir/Magasin.cpp.o: Magasin.h
+CMakeFiles/TP1_C++.dir/Magasin.cpp.o: Produit.h
 
 CMakeFiles/TP1_C++.dir/Produit.cpp.o: Produit.cpp
 CMakeFiles/TP1_C++.dir/Produit.cpp.o: Produit.h
