@@ -18,6 +18,14 @@ class Magasin {
         void afficherProduit();
         void afficherProduit(std::string nom);
         void updateQuantiteProduit(std::string nom, int quantite);
+        void afficherClient();
+        void afficherClientId(int id);
+        void afficherClientNom(std::string nom);
+        void afficherClientPrenom(std::string prenom);
+        void addProduitPanier(Client client, Produit produit);
+        void deleteProduitPanier(Client client, Produit produit);
+        void updateQuantitePanier(Client client, Produit produit, int quantite);
+    
 
 
 

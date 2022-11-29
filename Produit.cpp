@@ -3,6 +3,14 @@
 Produit::Produit(std::string titre, std::string description, int quantitie, float prix, int id)
 :_titre(titre), _description(description), _quantite(quantitie), _prix(prix), _id(id)
 {
+    if(_quantite <= 0) {
+        _quantite = 0;
+        std::runtime_error("la quantité doit être supérieur à 0");
+    }
+    if(_prix < 0) {
+        _prix = 0;
+        std::runtime_error("le prix doit être supérieur ou égal à 0");
+    }
 }
 std::string Produit::getTitre(){
     return _titre;

@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 #pragma once
+//TODO : const for getters !
 class Produit {
     private:
         std::string _titre;
