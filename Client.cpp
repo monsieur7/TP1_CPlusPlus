@@ -5,8 +5,8 @@
 #include <algorithm>
 
 
-Client::Client(int identifiant, std::string prenom, std::string nom, std::vector<Produit> panier) :
-_identifiant(identifiant), _prenom(prenom),_nom(nom),_panier(panier){}
+Client::Client(int identifiant, std::string prenom, std::string nom) 
+: _identifiant(identifiant), _prenom(prenom),_nom(nom){}
 
 int Client::getIdentifiant() const{
     return _identifiant;

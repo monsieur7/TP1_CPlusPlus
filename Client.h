@@ -9,9 +9,8 @@
 #define CLIENT_H
 
 class Client{
-
 	public:
-		Client(int identifiant, std::string prenom, std::string nom, std::vector<Produit> panier);
+		Client(int identifiant, std::string prenom, std::string nom);
 		int getIdentifiant() const;
         std::string getPrenom() const;
         std::string getNom() const;
