@@ -26,6 +26,7 @@ int main(void){
     dijon.affichageCommande(); //TODO
     //TODO : add a product in the command before validating it !
     dijon.validerCommande(1);
+
     
 
 

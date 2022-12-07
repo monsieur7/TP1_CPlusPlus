@@ -98,7 +98,9 @@ void Magasin::majStatusCommande(){
 }
         
 void Magasin::affichageCommande(){
-//TODO
+    for(auto& i : _commandes){
+        std::cout << i << std::endl;
+    }
 }
         
 void Magasin::affichageCommandeParClient(Client client){
