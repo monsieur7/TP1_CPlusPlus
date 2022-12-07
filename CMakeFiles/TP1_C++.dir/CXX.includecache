@@ -32,20 +32,6 @@ Client.h
 Produit.h
 /home/mw/C++/TP3/TP1_CPlusPlus/Produit.h
 
-/home/mw/C++/TP3/TP1_CPlusPlus/Magasin.cpp
-Magasin.h
-/home/mw/C++/TP3/TP1_CPlusPlus/Magasin.h
-cstdlib
--
-iterator
--
-algorithm
--
-array
--
-vector
--
-
 /home/mw/C++/TP3/TP1_CPlusPlus/Magasin.h
 Client.h
 /home/mw/C++/TP3/TP1_CPlusPlus/Client.h
@@ -65,4 +51,10 @@ string
 -
 iostream
 -
+
+/home/mw/C++/TP3/TP1_CPlusPlus/main.cpp
+iostream
+-
+Magasin.h
+/home/mw/C++/TP3/TP1_CPlusPlus/Magasin.h
 

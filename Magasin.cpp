@@ -65,7 +65,7 @@ void Magasin::afficherClient(){
 void Magasin::afficherClientId(int id){
     for(auto& i : _clients){
         if(i.getIdentifiant() == id)
-            std::cout << i << std::endl;
+            std::cout << i.getIdentifiant() << std::endl;
     }
 }
 void Magasin::afficherClientNom(std::string nom){
