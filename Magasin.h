@@ -10,6 +10,7 @@ class Magasin {
         std::vector<Produit> _produits;
         std::vector <Client> _clients;
         std::vector<Commande> _commandes;
+        std::string _nom = "EasyStore";
     public:
         Magasin();
         void addProduit(Produit produit);
@@ -37,6 +38,7 @@ class Magasin {
         void updateQuantitePanier(Client client, Produit produit, int quantite);
     
         void addProduitInCommande(int commande_id, Produit produit);
+        const std::string& getNom() const;
         //TODO : add a product method (and other things) 
 
 

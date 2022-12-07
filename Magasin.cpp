@@ -5,10 +5,13 @@
 #include <array>
 #include <vector>
 
-
+const std::string& Magasin::getNom() const {
+    return _nom;
+}
 Magasin::Magasin(){
     ;
-};
+}
+
 void Magasin::addProduit(Produit produit){
     for (auto &i : _produits){
         if(i.getId() == produit.getId()){
