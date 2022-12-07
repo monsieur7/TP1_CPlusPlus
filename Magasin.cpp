@@ -36,6 +36,7 @@ void Magasin::addCommande(Commande commande){
         }
     }
     _commandes.push_back(commande);
+    _commandes.back().setStatus(Status::PAS_LIVREE);
 }
 
 void Magasin::afficherProduit(){
@@ -96,16 +97,26 @@ bool Magasin::validerCommande(int numeroCommande){
 		
 }
   
-void Magasin::majStatusCommande(){
-//TODO
+void Magasin::majStatusCommande(Commande commande, Status nouveauStatus){
+    commande.setStatus(nouveauStatus);
+    
+    //Pas compris ce qu'il faut faire ici
 }
         
 void Magasin::affichageCommande(){
-//TODO
+    for(auto& i : _commandes){
+        std::cout << i << std::endl;
+    }
 }
         
 void Magasin::affichageCommandeParClient(Client client){
-//TODO 
+    for(auto& i : _commandes){
+        if(i.getClient().getIdentifiant() == client.getIdentifiant()){
+            std::cout << "Commande de " << client.getPrenom() << " " << client.getNom() << ": " <<
+            i << std::endl;
+
+        }
+    }
 }
 
 

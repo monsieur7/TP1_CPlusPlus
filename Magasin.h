@@ -24,7 +24,7 @@ class Magasin {
         void updateQuantiteProduit(std::string nom, int quantite);
 
         bool validerCommande(int numeroCommande);
-        void majStatusCommande();
+        void majStatusCommande(Commande commande, Status nouveauStatus);
         void affichageCommande();   
         void affichageCommandeParClient(Client client);
 
