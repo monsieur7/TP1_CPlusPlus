@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Magasin.h"
+//TODO : automatic id;
 int main(void){
     Magasin dijon;
     Produit lait("lait", "lait 1L entier", 10, 1.00, 1);
@@ -19,6 +20,16 @@ int main(void){
 
     dijon.addProduitPanier(client, lait);
     dijon.afficherProduit();
+
+    Commande noel(1, client);
+    dijon.addCommande(noel);
+    dijon.affichageCommande(); //TODO
+    //TODO : add a product in the command before validating it !
+    dijon.validerCommande(1);
+    
+
+
+
 
     return 0;
 }

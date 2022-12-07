@@ -36,7 +36,8 @@ class Magasin {
         void deleteProduitPanier(Client client, Produit produit);
         void updateQuantitePanier(Client client, Produit produit, int quantite);
     
-
+        void addProduitInCommande(int commande_id, Produit produit);
+        //TODO : add a product method (and other things) 
 
 
 
