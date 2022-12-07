@@ -21,10 +21,11 @@ int main(void){
     dijon.addProduitPanier(client, lait);
     dijon.afficherProduit();
 
-    Commande noel(1, client);
+    Commande noel(0, client);
     dijon.addCommande(noel);
     dijon.affichageCommande(); 
-    dijon.majStatusCommande();
+    dijon.majStatusCommande(noel, Status::LIVREE);
+    dijon.affichageCommande(); 
     dijon.affichageCommandeParClient(client);
 
     //TODO : add a product in the command before validating it !

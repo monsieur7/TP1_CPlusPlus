@@ -33,6 +33,7 @@ void Magasin::addCommande(Commande commande){
         }
     }
     _commandes.push_back(commande);
+    _commandes.back().setStatus(Status::PAS_LIVREE);
 }
 
 void Magasin::afficherProduit(){
@@ -93,7 +94,9 @@ bool Magasin::validerCommande(int numeroCommande){
 		
 }
   
-void Magasin::majStatusCommande(){
+void Magasin::majStatusCommande(Commande commande, Status nouveauStatus){
+    commande.setStatus(nouveauStatus);
+    
     //Pas compris ce qu'il faut faire ici
 }
         
