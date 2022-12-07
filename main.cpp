@@ -23,7 +23,10 @@ int main(void){
 
     Commande noel(1, client);
     dijon.addCommande(noel);
-    dijon.affichageCommande(); //TODO
+    dijon.affichageCommande(); 
+    dijon.majStatusCommande();
+    dijon.affichageCommandeParClient(client);
+
     //TODO : add a product in the command before validating it !
     dijon.validerCommande(1);
 

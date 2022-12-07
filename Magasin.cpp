@@ -94,7 +94,7 @@ bool Magasin::validerCommande(int numeroCommande){
 }
   
 void Magasin::majStatusCommande(){
-//TODO
+    //Pas compris ce qu'il faut faire ici
 }
         
 void Magasin::affichageCommande(){
@@ -104,7 +104,13 @@ void Magasin::affichageCommande(){
 }
         
 void Magasin::affichageCommandeParClient(Client client){
-//TODO 
+    for(auto& i : _commandes){
+        if(i.getClient().getIdentifiant() == client.getIdentifiant()){
+            std::cout << "Commande de " << client.getPrenom() << " " << client.getNom() << ": " <<
+            i << std::endl;
+
+        }
+    }
 }
 
 
