@@ -40,4 +40,12 @@ void Client::supprimerProduit(Produit produit){
     _panier.erase(std::remove_if(_panier.begin(), _panier.end(), [produit](Produit& pdt){return produit.getId() == pdt.getId();}), _panier.end());
 
 }
-        
+
+std::string Client::toFile() const
+{
+    std::string temp =  "CLIENT" + " " _identifiant +  " " + _prenom + " " + _nom;
+    for(auto i : _panier){
+        temp += " " + i.getId();
+    }
+    return temp;
+}

@@ -5,6 +5,7 @@
 
 #include "Client.h"
 #include "Produit.h"
+#include "FileStore.h"
 #pragma once
 enum class Status {
     LIVREE,
@@ -12,7 +13,7 @@ enum class Status {
 
 }; 
 
-class Commande {
+class Commande : public FileStore {
     private:
         int commande;
         Client _client;
@@ -45,6 +46,8 @@ class Commande {
             os << "Id commande: " << commande.getId() << " client: " << commande.getClient() << 
             " status du produit: " << commande.toString(commande.getStatus()) << " liste des produits: " << ss.str();
             return os;
-    }
+    }       
+    
+    std::string toFile() const;
         
 };

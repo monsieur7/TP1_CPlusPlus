@@ -41,7 +41,13 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "bit": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "string_view": "cpp",
+        "numbers": "cpp",
+        "any": "cpp"
     },
     "cmake.sourceDirectory": "${workspaceFolder}/.",
     "C_Cpp.errorSquiggles": "Disabled"

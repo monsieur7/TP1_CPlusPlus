@@ -161,8 +161,7 @@ int main(void){
     setvbuf(stdout, nullptr, _IOFBF, 1000);
 #endif
     mag = new Magasin();
-    
-   while(true){
+    while(true){
     int c;
     
     std::cout << "que voulez vous faire ?" << std::endl;

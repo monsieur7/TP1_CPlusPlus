@@ -8,7 +8,7 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 
-class Client{
+class Client : public FileStore{
 	    public:
 		Client(int identifiant, std::string prenom, std::string nom);
         
@@ -33,6 +33,7 @@ class Client{
             return os;
     }
 
+    std::string toFile() const; //TODO 
 
 	private:
 		int _identifiant;

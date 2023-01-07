@@ -49,3 +49,6 @@ const std::vector<Produit>& Commande::getListeProduit() const {
     return _liste_produit;
 }
 
+std::string Commande::toFile() const {
+    return "a"; // TODO : ONLY FOR TESTING
+}

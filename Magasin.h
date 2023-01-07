@@ -5,7 +5,7 @@
 #include <vector>
 #include <algorithm>
 
-class Magasin {
+class Magasin : public FileStore{
     private:
         std::vector<Produit> _produits;
         std::vector <Client> _clients;
@@ -39,7 +39,10 @@ class Magasin {
     
         void addProduitInCommande(int commande_id, Produit produit);
         const std::string& getNom() const;
+
+        std::string toFile() const; //TODO THIS -<
         //TODO : add a product method (and other things) 
+
 
 
 

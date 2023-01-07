@@ -2,7 +2,7 @@
 #include <iostream>
 #pragma once
 //TODO : const for getters !
-class Produit {
+class Produit : public FileStore{
     private:
         std::string _titre;
         std::string _description;
@@ -25,5 +25,6 @@ class Produit {
         void setId(int id);
 
         friend std::ostream& operator<<(std::ostream& os, Produit& produit );
+        std::string toFile() const; //TODO : toFile
 
 };
